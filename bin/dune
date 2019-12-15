@@ -1,0 +1,8 @@
+(executable
+    (name main)
+    (libraries yourlibname)
+    (preprocess (pps ppx_deriving.show)))
+
+(install
+    (section bin)
+    (files (main.exe as yourbinname)))

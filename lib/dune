@@ -1,0 +1,4 @@
+(library
+ (name yourlibname)
+ (public_name yourlibname)
+ (preprocess (pps ppx_deriving.show)))

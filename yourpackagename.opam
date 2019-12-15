@@ -1,0 +1,20 @@
+opam-version: "2.0"
+version: "1.0"
+maintainer: "youremail@example.com"
+authors: ["You"]
+homepage: "https://github.com/yourusername/yourpackagename"
+bug-reports: "https://github.com/yourusername/yourpackagename/issues"
+dev-repo: "git+https://github.com/yourusername/yourpackagename.git"
+license: "MIT"
+synopsis: "A short description"
+description: "A longer description"
+doc: "https://github.com/yourusername/yourpackagename"
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+    "dune" {>= "2.0"}
+    "ocaml"
+    "ppx_deriving"
+    "alcotest" {test}
+]
